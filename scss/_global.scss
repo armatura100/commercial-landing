@@ -1,0 +1,59 @@
+html {
+  font-size: $base-font-size + px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: rem(24);
+  font-weight: 400;
+  color: $text-color;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  padding: 0 rem(20);
+}
+
+.btn--accent {
+  background: $accent-color;
+  color: #fff;
+  border: 1px solid $accent-color;
+
+  &:hover {
+    background: #fff;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.btn--dark {
+  background: #111;
+  color: $accent-color;
+  border: 1px solid $accent-color;
+
+  &:hover {
+    background: $accent-color;
+    color: #fff;
+  }
+}
+
+.btn--light {
+  background: #fff;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+
+  &:hover {
+    color: #fff;
+    background: $accent-color;
+  }
+}

@@ -1,0 +1,32 @@
+@use "sass:math";
+
+$base-font-size: 16;
+
+@function rem($size) {
+  @if ($size % 2 != 0 and $size != 1) {
+    @warn "rem(#{$size}) is odd. Should be even";
+  }
+  @if ($size == 0) {
+    @warn "rem(#{$size}) is zero. Use plain 0 instead";
+  }
+  @return math.div($size, $base-font-size) + rem;
+}
+
+$accent-color: #e85e23;
+$text-color: #474747;
+$title-color: #333;
+
+%btn {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: rem(18);
+  line-height: rem(32);
+  height: rem(56);
+  max-width: rem(202);
+  width: 100%;
+  border-radius: rem(8);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

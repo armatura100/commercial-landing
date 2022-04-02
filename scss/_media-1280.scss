@@ -1,0 +1,374 @@
+@media (min-width: 1280px) {
+  .container {
+    max-width: rem(1296);
+    margin: 0 auto;
+  }
+
+  // ===================== Header ===================
+  .header {
+    background: url("../img/decor-1.png") rem(-420) rem(220) / rem(900)
+        no-repeat fixed,
+      url("../img/decor-2.png") 45vw rem(36) / rem(1180) auto no-repeat fixed,
+      #111;
+    min-height: rem(800);
+
+    &__top {
+      min-height: rem(122);
+      margin-bottom: rem(50);
+    }
+
+    &__content {
+      grid-gap: rem(72);
+    }
+
+    &__title {
+      font-size: rem(116);
+      line-height: rem(130);
+      max-width: 100%;
+    }
+
+    &__top-btn {
+      display: flex;
+    }
+  }
+
+  // ===================== Section ===================
+  .section {
+    margin: rem(160) 0;
+
+    &__title {
+      font-size: rem(24);
+      line-height: rem(32);
+      margin-bottom: rem(32);
+    }
+
+    &__inner {
+      grid-template-columns: rem(392) auto;
+    }
+
+    &__quote {
+      font-size: rem(64);
+      line-height: rem(72);
+    }
+
+    &__content-title {
+      font-size: rem(48);
+      line-height: rem(58);
+      margin-bottom: rem(40);
+    }
+  }
+
+  // ===================== Ideas ===================
+  .ideas {
+    &__content-title {
+      margin-bottom: rem(80);
+    }
+
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: rem(80) rem(32);
+    }
+
+    &__item {
+      padding-left: rem(92);
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  // ===================== Steps ===================
+  .step {
+    margin-bottom: rem(72);
+
+    &__list {
+      margin-bottom: rem(40);
+    }
+  }
+
+  // ===================== Benefits ===================
+  .benefits {
+    &__quote {
+      max-width: rem(270);
+    }
+
+    &__text {
+      margin-bottom: rem(40);
+    }
+
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: rem(80);
+    }
+
+    &__item-num {
+      font-size: rem(116);
+      line-height: rem(116);
+    }
+  }
+
+  // ===================== Contacts ===================
+  .contacts {
+    background: url("../img/decor-1.png") rem(-280) rem(56) / rem(1100)
+        no-repeat fixed,
+      url("../img/decor-1.png") 65vw rem(-50) / rem(1100) no-repeat fixed, #111;
+    padding: rem(160) 0;
+
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: rem(44);
+    }
+
+    &__form-items {
+      min-width: rem(584);
+      margin-bottom: 0;
+    }
+
+    &__form-btn {
+      margin-bottom: 0;
+    }
+  }
+
+  // ===================== Subscribtion ===================
+  .subscribtion {
+    &.section {
+      padding-top: rem(160);
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: rem(72) rem(32);
+    }
+  }
+
+  // ===================== Pricing ===================
+  .pricing {
+    &.section {
+      margin: rem(130) 0;
+    }
+
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: rem(32);
+    }
+  }
+
+  // ===================== Portfolio ===================
+  .portfolio {
+    background: url("../img/decor-1.png") rem(-130) rem(100) / rem(800)
+        no-repeat fixed,
+      url("../img/decor-1.png") 65vw rem(-50) / rem(900) no-repeat fixed, #111;
+    padding: rem(160) 0;
+
+    .container {
+      padding: 0 rem(28);
+    }
+
+    &__item {
+      margin-bottom: rem(30);
+    }
+  }
+
+  // ===================== Reviews ===================
+  .reviews {
+    .container {
+      padding: 0 rem(28);
+    }
+
+    &__nav {
+      right: 0;
+    }
+  }
+
+  // ===================== FAQ ===================
+  .faq {
+    &__content {
+      margin-bottom: rem(32);
+    }
+  }
+
+  // ===================== Footer ===================
+  .footer {
+    background: url("../img/decor-1.png") rem(-500) 0 / rem(900) no-repeat fixed,
+      url("../img/decor-no-blur.png") 65vw rem(-10) / rem(900) no-repeat fixed,
+      #111;
+
+    &__quote {
+      font-size: rem(48);
+      line-height: rem(58);
+      margin-bottom: rem(32);
+    }
+
+    &__text {
+      font-size: rem(24);
+      line-height: rem(32);
+    }
+
+    &__top {
+      padding: rem(160) 0;
+    }
+
+    &__form-inputs {
+      grid-gap: rem(48) rem(66);
+      margin-bottom: rem(48);
+    }
+
+    &__form-input {
+      padding-top: rem(24);
+    }
+
+    &__form {
+      max-width: rem(616);
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: rem(40) 0;
+    }
+
+    &__info-title {
+      font-weight: 700;
+      margin-bottom: rem(16);
+    }
+
+    &__info-list {
+      display: grid;
+      grid-gap: rem(8);
+    }
+
+    &__info-social-link {
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+
+      img {
+        margin-right: rem(12);
+      }
+    }
+
+    &__copy {
+      display: block;
+      text-align: center;
+      padding-bottom: rem(40);
+    }
+  }
+
+  .footer-info {
+    background: #111;
+    padding: 0;
+
+    .footer {
+      &__bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__info {
+        margin-bottom: 0;
+      }
+
+      &__info-social-item {
+        margin-bottom: 0;
+      }
+
+      &__btn {
+        display: flex;
+      }
+    }
+  }
+
+  // ===================== Page 404 ===================
+  .page-404 {
+    background: url("../img/decor-1.png") rem(-456) rem(-320) / rem(900)
+        no-repeat,
+      url("../img/decor-2.png") 62vw 0 / rem(1170) no-repeat;
+
+    &__title {
+      font-size: rem(300);
+      line-height: rem(300);
+      margin-bottom: rem(72);
+    }
+
+    &__text {
+      margin-bottom: rem(40);
+    }
+
+    &__buttons {
+      grid-template-columns: repeat(2, rem(202));
+      justify-content: center;
+    }
+  }
+
+  // ===================== Product-header ===================
+  .product-header {
+    &__inner {
+      min-height: rem(80);
+    }
+
+    &__btn {
+      display: flex;
+    }
+  }
+
+  // ===================== Product-tasks ===================
+  .product-tasks {
+    &__items {
+      display: grid;
+      grid-gap: rem(60) rem(32);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      margin: 0;
+    }
+  }
+
+  // ===================== adaptation ===================
+  .adaptation {
+    &__showcase {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: rem(80);
+    }
+
+    &__adaptive {
+      margin: 0;
+      max-width: rem(854);
+      order: 2;
+    }
+
+    &__iphone {
+      margin: 0;
+      max-width: rem(234);
+      order: 1;
+    }
+  }
+
+  // ===================== navigation ===================
+  .navigation {
+    margin-bottom: rem(160);
+  }
+
+  // ===================== Info page ===================
+  .info {
+    &__buttons {
+      min-width: rem(392);
+    }
+
+    &__btn {
+      font-size: rem(24);
+      line-height: rem(32);
+    }
+
+    &__item-title {
+      font-size: rem(48);
+      line-height: rem(58);
+      margin-bottom: rem(40);
+    }
+  }
+}

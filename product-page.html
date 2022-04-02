@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Product page</title>
+</head>
+
+<body>
+  <header class="product-header">
+    <div class="container">
+      <div class="product-header__inner">
+        <a class="logo" href="#">
+          <picture>
+            <source srcset="img/logo.svg" media="(min-width: 1280px)" />
+            <img src="img/logo-mobile.svg" alt="logo" />
+          </picture>
+        </a>
+        <a class="product-header__btn btn--dark" href="#"> Book call </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <img class="hero-img" src="img/product-banner.jpg" alt="banner" />
+
+    <section class="section product-about">
+      <div class="container">
+        <div class="section__inner">
+          <div class="section__side">
+            <h3 class="section__title">About the project</h3>
+          </div>
+          <div class="section__content">
+            <h6 class="section__content-title">
+              Landing page for future online store - Keep Austin Sexy
+            </h6>
+            <div class="section__text product-about__text">
+              <p>
+                An online women's sports apparel store from the KAS brand is
+                opening soon in Austin, Texas.
+              </p>
+              <p>
+                It is necessary to tell about the future store and emails to
+                inform potential customers about the opening.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-tasks">
+      <div class="container">
+        <div class="section__inner">
+          <div class="section__side">
+            <h3 class="section__title">Tasks</h3>
+          </div>
+          <div class="section__content">
+            <h6 class="section__content-title">The tasks before us</h6>
+            <ul class="product-tasks__items">
+              <li class="product-tasks__item">
+                Develop an attractive landing page with data collection forms.
+              </li>
+              <li class="product-tasks__item">
+                Pick up quality visual content in a single style.
+              </li>
+              <li class="product-tasks__item">
+                Competently organize text blocks so that the consumer can get
+                acquainted with the value of the brand.
+              </li>
+              <li class="product-tasks__item">
+                Develop an adaptive version of the site for mobile devices and
+                tablets.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <img class="mockup" src="img/mockup.png" alt="mockup" />
+    </div>
+
+    <section class="section adaptation">
+      <div class="container">
+        <div class="section__inner">
+          <div class="section__side">
+            <h3 class="section__title">Adaptation</h3>
+          </div>
+          <div class="section__content adaptation__content">
+            <h6 class="section__content-title">
+              The site is adapted for different devices
+            </h6>
+            <div class="section__text">
+              In 2020, half of Internet traffic is mobile, and in the future
+              the share of mobile will only grow. The interface of the
+              adaptive version should be easy to use, all unnecessary elements
+              are omitted to improve the loading speed.
+            </div>
+          </div>
+        </div>
+        <div class="adaptation__showcase">
+          <img class="adaptation__adaptive" src="img/adaptive.png" alt="mockup" />
+          <img class="adaptation__iphone" src="img/iphone.png" alt="iphone" />
+        </div>
+      </div>
+    </section>
+
+    <div class="navigation">
+      <div class="container">
+        <div class="navigation__inner">
+          <div class="navigation__text">
+            <a class="navigation__link" href="#">
+              <span>Go to the site</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12H22.6274M22.6274 12L11.3137 0.686292M22.6274 12L11.3137 23.3137" stroke="#111" />
+              </svg>
+            </a>
+            <p class="navigation__info">Can be edited by the customer.</p>
+          </div>
+          <div class="navigation__buttons">
+            <a class="navigation__btn-prev btn--light" href="#">
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.627 12H-0.000463486M-0.000463486 12L11.3132 23.3137M-0.000463486 12L11.3132 0.686292" stroke="#E85E23" />
+              </svg>
+              <span>Previous</span>
+            </a>
+            <a class="navigation__btn-next btn--accent" href="#">
+              <span>Next</span>
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12H22.6274M22.6274 12L11.3137 0.686292M22.6274 12L11.3137 23.3137" stroke="white" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top section__inner">
+        <div class="section__side footer__side">
+          <h3 class="footer__title section__title">Contact us</h3>
+          <p class="footer__quote">Let's get started</p>
+          <p class="footer__text">
+            We would like to talk to you about how we can help. Please leave
+            your details here and one of our team will contact you as soon as
+            possible.
+          </p>
+        </div>
+        <form class="footer__form">
+          <div class="footer__form-inputs">
+            <label class="footer__form-label">
+              <span>Your name</span>
+              <input class="footer__form-input" placeholder="Daniel Bale" type="text" />
+            </label>
+            <label class="footer__form-label">
+              <span>Your email</span>
+              <input class="footer__form-input" placeholder="nord_softworks@gmail.com" type="email" />
+            </label>
+            <label class="footer__form-label">
+              <span>Your comment</span>
+              <textarea class="footer__form-textarea footer__form-input" placeholder="Your comment"></textarea>
+            </label>
+          </div>
+          <div class="footer__form-info">
+            <button class="footer__form-btn btn--accent" type="submit">
+              Send
+            </button>
+            <p class="footer__form-data">
+              By clicking on the button, you agree to the
+              <a class="footer__form-link" href="#">processing of personal data</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <a class="logo" href="#">
+          <picture>
+            <source srcset="img/logo.svg" media="(min-width: 1280px)" />
+            <img src="img/logo-mobile.svg" alt="logo" />
+          </picture>
+        </a>
+        <div class="footer__info">
+          <p class="footer__info-title">Info</p>
+          <ul class="footer__info-list">
+            <li class="footer__info-item">
+              <a class="footer__info-link" href="#"> Private policy </a>
+            </li>
+            <li class="footer__info-item">
+              <a class="footer__info-link" href="#"> Terms and conditions </a>
+            </li>
+            <li class="footer__info-item">
+              <a class="footer__info-link" href="#"> Payment </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <p class="footer__info-title">Contacts</p>
+          <ul class="footer__info-list">
+            <li class="footer__info-item">
+              <a class="footer__info-link" href="mailto:nord_softworks@gmail.com">
+                nord_softworks@gmail.com
+              </a>
+            </li>
+            <li class="footer__info-item">
+              <a class="footer__info-social-link" href="#">
+                <img src="img/facebook-icon.svg" alt="facebook" />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__info-item">
+              <a class="footer__info-social-link" href="#">
+                <img src="img/twitter-icon.svg" alt="twitter" />
+                Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer__btn btn--dark" href="#"> Book call </a>
+      </div>
+      <div class="footer__copy">
+        &#174; 2021 Copyright. All rights reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

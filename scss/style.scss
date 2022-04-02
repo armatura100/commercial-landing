@@ -1,0 +1,1166 @@
+@import "reset";
+@import "vars";
+@import "global";
+
+// ===================== Header ===================
+.header {
+  background: url("../img/decor-1.png") rem(-420) rem(-250) / rem(600) no-repeat fixed,
+    url("../img/decor-2.png") 25vw rem(-74) / rem(678) auto no-repeat fixed,
+    #111;
+  min-height: rem(640);
+  height: 100vh;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: rem(66);
+    margin-bottom: rem(64);
+  }
+
+  &__top-btn {
+    @extend %btn;
+    display: none;
+  }
+
+  &__content {
+    color: #fff;
+    display: grid;
+    grid-gap: rem(48);
+  }
+
+  &__title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: rem(36);
+    line-height: rem(44);
+    max-width: rem(350);
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: rem(32);
+    color: rgba(#fff, 0.8);
+  }
+
+  &__item {
+    padding-left: rem(24);
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      height: rem(8);
+      width: rem(8);
+      background: $accent-color;
+      border-radius: 50%;
+
+      position: absolute;
+      top: rem(8);
+      left: 0;
+    }
+  }
+
+  &__cta {
+    display: flex;
+  }
+
+  &__cta-btn {
+    @extend %btn;
+
+    & + & {
+      margin-left: rem(12);
+    }
+  }
+}
+
+// ===================== Section ===================
+.section {
+  margin: rem(64) 0;
+
+  &__side {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: $title-color;
+  }
+
+  &__title {
+    margin-bottom: rem(16);
+
+    position: relative;
+
+    &::after {
+      content: "";
+      width: rem(48);
+      height: 1px;
+      background: $title-color;
+
+      position: absolute;
+      margin-left: rem(16);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__quote {
+    font-size: rem(32);
+    line-height: rem(40);
+    margin-bottom: rem(32);
+  }
+
+  &__content-title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: rem(24);
+    line-height: rem(32);
+    color: $title-color;
+    margin-bottom: rem(24);
+  }
+}
+
+// ===================== Ideas ===================
+.ideas {
+  &__content-title {
+    margin-bottom: rem(72);
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: rem(64);
+  }
+
+  &__item {
+    padding-left: rem(80);
+    position: relative;
+    counter-increment: my-counter;
+
+    &::before {
+      content: "0"counter(my-counter);
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: rem(116);
+      line-height: rem(116);
+      color: #f4f4f4;
+
+      position: absolute;
+      left: 0;
+      top: rem(-40);
+      z-index: -1;
+    }
+  }
+}
+
+// ===================== Steps ===================
+.steps {
+  .container {
+    padding: 0;
+  }
+}
+
+.step {
+  margin-bottom: rem(48);
+
+  .section__side {
+    padding: 0 rem(20);
+  }
+
+  &__title {
+    margin-bottom: rem(24);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__list {
+    margin-bottom: rem(24);
+    padding: 0 rem(20);
+  }
+
+  &__list-item {
+    padding-left: rem(24);
+    position: relative;
+
+    span {
+      font-weight: 600;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: rem(8);
+      width: rem(8);
+      background: $accent-color;
+      border-radius: 50%;
+
+      position: absolute;
+      top: rem(10);
+      left: 0;
+    }
+
+    & + & {
+      margin-top: rem(16);
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    min-height: rem(208);
+
+    max-width: 100%;
+  }
+}
+
+// ===================== Benefits ===================
+.benefits {
+  &__quote {
+    max-width: rem(212);
+  }
+
+  &__text {
+    margin-bottom: rem(24);
+  }
+
+  &__items {
+    display: grid;
+    grid-row-gap: rem(24);
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-num {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: rem(80);
+    line-height: rem(80);
+    color: #111;
+    margin-right: rem(18);
+  }
+}
+
+// ===================== Contacts ===================
+.contacts {
+  background: url("../img/decor-1.png") rem(-270) rem(86) / rem(500) no-repeat fixed,
+    url("../img/decor-1.png") 50vw rem(-50) / rem(900) no-repeat fixed, #111;
+
+  padding: rem(64) 0;
+  color: #fff;
+
+  &.section {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: #fff;
+
+    &::after {
+      background: #fff;
+    }
+  }
+
+  &__content-title {
+    color: #fff;
+  }
+
+  &__form-items {
+    display: grid;
+    grid-gap: rem(24);
+    margin-bottom: rem(32);
+  }
+
+  &__form-item {
+    display: grid;
+
+    span {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  &__form-input {
+    background: transparent;
+    font-size: rem(14);
+    line-height: rem(20);
+    padding: rem(16) 0 rem(8);
+    border-bottom: 1px solid rgba(#fff, 0.6);
+
+    transition: border-bottom-color 0.3s;
+
+    &::placeholder {
+      color: #c4c4c4;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom-color: #fff;
+    }
+  }
+
+  &__form-btn {
+    @extend %btn;
+    max-width: 100%;
+    margin-bottom: rem(24);
+  }
+}
+
+.contacts-info {
+  font-size: rem(12);
+  line-height: rem(20);
+}
+
+.contacts-link {
+  display: inline;
+  color: $accent-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// ===================== Subscribtion ===================
+.subscribtion {
+  &.section {
+    margin-top: 0;
+    padding-top: rem(64);
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: rem(24);
+  }
+
+  &__item {
+    padding: rem(28) 0 0 rem(56);
+    counter-increment: my-counter;
+    position: relative;
+
+    &::before {
+      content: "0"counter(my-counter);
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: rem(116);
+      line-height: rem(116);
+      color: #f4f4f4;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
+// ===================== Pricing ===================
+.pricing {
+  overflow-x: hidden;
+  padding: rem(30) 0;
+
+  &.section {
+    margin: rem(34) 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: rem(38);
+    justify-items: center;
+  }
+}
+
+.pricing-item {
+  text-align: center;
+  color: $title-color;
+  max-width: rem(392);
+  width: 100%;
+  padding: rem(24);
+  border: 1px solid #c4c4c4;
+  border-radius: rem(6);
+  position: relative;
+
+  transition: box-shadow 0.3s, border-color 0.3s;
+
+  &:hover {
+    box-shadow: 0 rem(4) rem(36) rgba(#000, 0.09);
+    border-color: transparent;
+  }
+
+  &__band {
+    position: absolute;
+    width: 5.625rem;
+    height: 5.625rem;
+    border-left: rem(22) solid #994a28;
+    border-top: rem(22) solid transparent;
+    border-right: rem(22) solid transparent;
+    border-bottom: rem(22) solid #994a28;
+    top: -1.5rem;
+    right: -1.5rem;
+    pointer-events: none;
+
+    .square-white {
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 0 0.375rem 0 0;
+      width: 4.25rem;
+      height: 4.25rem;
+      left: -1.5rem;
+      top: 0.125rem;
+    }
+  }
+
+  &__band-rotate {
+    position: absolute;
+    bottom: 0.625rem;
+    left: -0.625rem;
+    transform: rotate(-135deg);
+    width: 8rem;
+    height: 5.625rem;
+    border-left: rem(22) solid transparent;
+    border-top: rem(22) solid #e85e23;
+    border-right: rem(22) solid transparent;
+    border-bottom: rem(22) solid transparent;
+    box-shadow: 0 rem(-6) rem(4) rem(-4) rgba(#000, 0.25);
+  }
+
+  &__band-value {
+    position: absolute;
+    transform: rotate(-180deg);
+    top: -57%;
+    left: 25%;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+
+  &__title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: rem(24);
+    line-height: rem(32);
+    margin-bottom: rem(8);
+  }
+
+  &__price {
+    font-weight: 500;
+  }
+
+  &__price-currency {
+    font-size: rem(14);
+    line-height: rem(14);
+  }
+
+  &__price-cost {
+    font-size: rem(32);
+    line-height: rem(32);
+  }
+
+  &__price-cents {
+    display: inline-block;
+    margin-left: rem(-8);
+    transform: translateY(rem(-8));
+  }
+
+  &__period {
+    font-size: rem(12);
+    line-height: rem(20);
+    margin-bottom: rem(28);
+  }
+
+  &__list {
+    text-align: left;
+    color: $text-color;
+    margin-bottom: rem(24);
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(16);
+
+    img {
+      margin-right: rem(10);
+    }
+  }
+
+  &__list-item--included {
+    color: $title-color;
+  }
+
+  &__btn {
+    @extend %btn;
+    margin: 0 auto rem(24);
+  }
+
+  &__full {
+    font-size: rem(12);
+    line-height: rem(20);
+  }
+
+  &__full-currency {
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(14);
+  }
+
+  &__full-price {
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(32);
+  }
+
+  &__full-cents {
+    font-weight: 500;
+    display: inline-block;
+    margin-left: rem(-4);
+    transform: translateY(rem(-6));
+  }
+}
+
+// ===================== Portfolio ===================
+.portfolio {
+  background: url("../img/decor-1.png") rem(-270) rem(270) / rem(500) no-repeat fixed,
+    url("../img/decor-1.png") 50vw rem(-50) / rem(900) no-repeat fixed, #111;
+  padding: rem(64) 0;
+
+  &.section {
+    margin-top: rem(34);
+  }
+
+  .container {
+    padding-right: 0;
+  }
+
+  &__title {
+    color: #fff;
+
+    &::after {
+      background: #fff;
+    }
+  }
+
+  &__quote {
+    color: #fff;
+  }
+
+  &__slider {
+    color: #fff;
+    max-width: 100%;
+  }
+
+  &__slider-wrapper {
+    padding-bottom: rem(40);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: rem(20);
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  &__button {
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+      path {
+        stroke: $text-color;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    user-select: none;
+    color: #c4c4c4;
+    position: static;
+    width: auto;
+    margin: 0 rem(16);
+  }
+
+  &__item-img {
+    margin-bottom: rem(24);
+    width: 100%;
+
+    img {
+      max-height: rem(400);
+      border-radius: rem(6);
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &__item-title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: rem(32);
+    display: block;
+    padding-left: rem(64);
+    margin-bottom: rem(16);
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: rem(48);
+      height: 1px;
+      background: #fff;
+
+      position: absolute;
+      top: rem(16);
+      left: 0;
+    }
+  }
+}
+
+// ===================== Reviews ===================
+.reviews {
+  &__slider {
+    max-width: 100%;
+    padding-bottom: rem(50);
+  }
+
+  &__item {
+    padding: rem(34) 0 0 rem(42);
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: rem(112);
+      height: rem(96);
+      background-image: url("../img/ticks.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__item-text {
+    margin-bottom: rem(24);
+  }
+
+  &__item-author {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: rem(24);
+    line-height: rem(32);
+    text-transform: uppercase;
+    color: #111;
+    padding-left: rem(66);
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: rem(48);
+      height: 1px;
+      background: #111;
+
+      position: absolute;
+      top: rem(16);
+      left: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .swiper-pagination {
+    position: static;
+    width: auto;
+    user-select: none;
+    color: #111;
+    margin: 0 rem(16);
+  }
+
+  &__btn {
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+      path {
+        stroke: #c4c4c4;
+      }
+    }
+  }
+}
+
+// ===================== FAQ ===================
+.faq {
+  &__item {
+    border-bottom: 1px solid #111;
+    margin-bottom: rem(24);
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: rem(24);
+    line-height: rem(32);
+    color: $title-color;
+    padding-right: rem(30);
+    cursor: pointer;
+    margin-bottom: rem(16);
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: rem(16);
+      height: rem(16);
+      background-image: url("../img/faq-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s;
+
+      position: absolute;
+      top: rem(8);
+      right: rem(4);
+    }
+
+    &.faq--active::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.3s;
+  }
+
+  &__content {
+    margin-bottom: rem(24);
+  }
+}
+
+// ===================== Footer ===================
+.footer {
+  background: url("../img/decor-1.png") rem(-600) rem(-216) / rem(900) no-repeat fixed,
+    url("../img/decor-no-blur.png") 40vw rem(300) / rem(520) no-repeat fixed,
+    #111;
+  color: #fff;
+
+  &__top {
+    padding: rem(64) 0;
+  }
+
+  &__side {
+    color: #fff;
+    margin-bottom: rem(32);
+  }
+
+  &__title {
+    &::after {
+      background: #fff;
+    }
+  }
+
+  &__quote {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: rem(24);
+    line-height: rem(32);
+    font-weight: 400;
+    margin-bottom: rem(16);
+  }
+
+  &__text {
+    color: #c4c4c4;
+    font-weight: 400;
+  }
+
+  &__form-inputs {
+    display: grid;
+    grid-gap: rem(24);
+    margin-bottom: rem(24);
+  }
+
+  &__form-label {
+    display: block;
+
+    span {
+      display: block;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  &__form-input {
+    font-size: rem(14);
+    line-height: rem(20);
+    width: 100%;
+    padding: rem(16) 0 rem(8);
+    background: transparent;
+    border-bottom: 1px solid rgba(#fff, 0.6);
+
+    &:focus {
+      outline: none;
+      border-bottom-color: #fff;
+    }
+  }
+
+  &__form-textarea {
+    resize: vertical;
+    height: rem(54);
+  }
+
+  &__form-btn {
+    @extend %btn;
+    max-width: 100%;
+    margin-bottom: rem(24);
+  }
+
+  &__form-data {
+    font-size: rem(12);
+    line-height: rem(20);
+    color: #c4c4c4;
+  }
+
+  &__form-link {
+    display: inline;
+    color: $accent-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__bottom {
+    display: none;
+  }
+
+  &__btn {
+    @extend %btn;
+  }
+
+  &__copy {
+    display: none;
+  }
+}
+
+.footer-info {
+  display: block;
+  background: #111;
+  padding: rem(40) 0;
+
+  .footer {
+    &__bottom {
+      display: block;
+      text-align: center;
+    }
+
+    &__logo {
+      margin-bottom: rem(40);
+    }
+
+    &__info {
+      margin-bottom: rem(40);
+    }
+
+    &__info-title {
+      font-weight: 700;
+      margin-bottom: rem(16);
+    }
+
+    &__info-item {
+      margin-bottom: rem(8);
+    }
+
+    &__info-social-item {
+      margin-bottom: rem(8);
+    }
+
+    &__info-social-link {
+      display: inline-flex;
+      text-decoration: underline;
+
+      img {
+        margin-right: rem(12);
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+
+  .footer__copy {
+    display: block;
+    text-align: center;
+  }
+}
+
+// ===================== Page 404 ===================
+.page-404 {
+  background: url("../img/decor-1.png") rem(-340) rem(-250) / rem(600) no-repeat,
+    url("../img/decor-2.png") 50vw rem(126) / rem(578) no-repeat;
+
+  &__inner {
+    min-height: 100vh;
+    text-align: center;
+    display: grid;
+    place-content: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(150);
+    line-height: rem(150);
+    color: #000;
+    margin-bottom: rem(48);
+  }
+
+  &__text {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: rem(32);
+    line-height: rem(40);
+    color: $title-color;
+    margin-bottom: rem(32);
+  }
+
+  &__buttons {
+    display: grid;
+    grid-gap: rem(12);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__btn {
+    @extend %btn;
+  }
+}
+
+// ===================== Product-header ===================
+.product-header {
+  background: #111;
+  box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: rem(62);
+  }
+
+  &__btn {
+    display: none;
+    @extend %btn;
+  }
+}
+
+// ===================== hero-img ===================
+.hero-img {
+  object-fit: cover;
+  width: 100%;
+  min-height: rem(250);
+}
+
+// ===================== Product-about ===================
+.product-about {
+  p {
+    margin-bottom: rem(24);
+  }
+}
+
+// ===================== Product-tasks ===================
+.product-tasks {
+  &__item {
+    padding: rem(40) 0 0 rem(90);
+    min-height: rem(116);
+    margin: rem(24) 0;
+    counter-increment: my-counter;
+    position: relative;
+
+    &::before {
+      content: "0"counter(my-counter);
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: rem(116);
+      line-height: rem(116);
+      color: #f4f4f4;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
+// ===================== hero-img ===================
+.mockup {
+  object-fit: cover;
+  width: 100%;
+}
+
+// ===================== adaptation ===================
+.adaptation {
+  &__content {
+    margin-bottom: rem(40);
+  }
+
+  &__adaptive {
+    max-width: 100%;
+    margin-bottom: rem(40);
+  }
+
+  &__iphone {
+    max-width: rem(234);
+    margin: 0 auto;
+  }
+}
+
+// ===================== navigation ===================
+.navigation {
+  margin-bottom: rem(64);
+
+  &__text {
+    text-align: center;
+    margin-bottom: rem(40);
+  }
+
+  &__link {
+    font-size: rem(18);
+    line-height: rem(32);
+    color: $title-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(8);
+
+    span {
+      margin-right: rem(16);
+    }
+  }
+
+  &__info {
+    font-size: rem(12);
+    line-height: rem(20);
+    color: #111;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    @extend %btn;
+
+    path {
+      transition: stroke 0.3s;
+    }
+  }
+
+  &__btn-prev {
+    span {
+      margin-left: rem(16);
+    }
+
+    &:hover {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &__btn-next {
+    margin-left: rem(16);
+    max-width: rem(174);
+
+    span {
+      margin-right: rem(16);
+    }
+
+    &:hover {
+      path {
+        stroke: $accent-color;
+      }
+    }
+  }
+}
+
+// ===================== Info page ===================
+.info {
+  padding: rem(48) 0;
+
+  &__buttons {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: rem(16);
+    margin-bottom: rem(16);
+  }
+
+  &__btn {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: rem(24);
+    color: $title-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    & + & {
+      margin-left: rem(20);
+    }
+  }
+
+  &__btn--active {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+
+  &__item {
+    display: none;
+  }
+
+  &__item--active {
+    display: block;
+  }
+
+  &__item-title {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: rem(24);
+    line-height: rem(32);
+    color: $title-color;
+    margin-bottom: rem(24);
+  }
+
+  &__item-content {
+    p {
+      margin-bottom: rem(20);
+    }
+  }
+}
+
+
+@import "media-768";
+@import "media-1280";
