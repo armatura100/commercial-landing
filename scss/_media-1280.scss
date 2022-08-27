@@ -1,4 +1,4 @@
-@media (min-width: 1280px) {
+@media (min-width: rem(1280)) {
   .container {
     max-width: rem(1296);
     margin: 0 auto;
@@ -6,8 +6,7 @@
 
   // ===================== Header ===================
   .header {
-    background: url("../img/decor-1.png") rem(-420) rem(220) / rem(900)
-        no-repeat fixed,
+    background: url("../img/decor-1.png") rem(-420) rem(220) / rem(900) no-repeat fixed,
       url("../img/decor-2.png") 45vw rem(36) / rem(1180) auto no-repeat fixed,
       #111;
     min-height: rem(800);
@@ -110,8 +109,7 @@
 
   // ===================== Contacts ===================
   .contacts {
-    background: url("../img/decor-1.png") rem(-280) rem(56) / rem(1100)
-        no-repeat fixed,
+    background: url("../img/decor-1.png") rem(-280) rem(56) / rem(1100) no-repeat fixed,
       url("../img/decor-1.png") 65vw rem(-50) / rem(1100) no-repeat fixed, #111;
     padding: rem(160) 0;
 
@@ -158,8 +156,7 @@
 
   // ===================== Portfolio ===================
   .portfolio {
-    background: url("../img/decor-1.png") rem(-130) rem(100) / rem(800)
-        no-repeat fixed,
+    background: url("../img/decor-1.png") rem(-130) rem(100) / rem(800) no-repeat fixed,
       url("../img/decor-1.png") 65vw rem(-50) / rem(900) no-repeat fixed, #111;
     padding: rem(160) 0;
 
@@ -283,8 +280,7 @@
 
   // ===================== Page 404 ===================
   .page-404 {
-    background: url("../img/decor-1.png") rem(-456) rem(-320) / rem(900)
-        no-repeat,
+    background: url("../img/decor-1.png") rem(-456) rem(-320) / rem(900) no-repeat,
       url("../img/decor-2.png") 62vw 0 / rem(1170) no-repeat;
 
     &__title {

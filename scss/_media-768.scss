@@ -1,12 +1,11 @@
-@media (min-width: 768px) {
+@media (min-width: rem(768)) {
   .container {
     padding: 0 rem(28);
   }
 
   // ===================== Header ===================
   .header {
-    background: url("../img/decor-1.png") rem(-420) rem(120) / rem(650)
-        no-repeat fixed,
+    background: url("../img/decor-1.png") rem(-420) rem(120) / rem(650) no-repeat fixed,
       url("../img/decor-2.png") 40vw rem(-152) / rem(978) auto no-repeat fixed,
       #111;
 
@@ -85,8 +84,7 @@
 
   // ===================== Сontacts ===================
   .contacts {
-    background: url("../img/decor-1.png") rem(-130) rem(56) / rem(500) no-repeat
-        fixed,
+    background: url("../img/decor-1.png") rem(-130) rem(56) / rem(500) no-repeat fixed,
       url("../img/decor-1.png") 65vw rem(-50) / rem(900) no-repeat fixed, #111;
 
     &__form-items {
@@ -124,8 +122,7 @@
 
   // ===================== Portfolio ===================
   .portfolio {
-    background: url("../img/decor-1.png") rem(-130) rem(172) / rem(600)
-        no-repeat fixed,
+    background: url("../img/decor-1.png") rem(-130) rem(172) / rem(600) no-repeat fixed,
       url("../img/decor-1.png") 65vw rem(-50) / rem(900) no-repeat fixed, #111;
   }
 

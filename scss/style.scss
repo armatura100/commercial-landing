@@ -92,7 +92,7 @@
     &::after {
       content: "";
       width: rem(48);
-      height: 1px;
+      height: rem(1);
       background: $title-color;
 
       position: absolute;
@@ -134,7 +134,7 @@
     counter-increment: my-counter;
 
     &::before {
-      content: "0"counter(my-counter);
+      content: "0" counter(my-counter);
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-weight: 700;
       font-size: rem(116);
@@ -285,7 +285,7 @@
     font-size: rem(14);
     line-height: rem(20);
     padding: rem(16) 0 rem(8);
-    border-bottom: 1px solid rgba(#fff, 0.6);
+    border-bottom: rem(1) solid rgba(#fff, 0.6);
 
     transition: border-bottom-color 0.3s;
 
@@ -338,7 +338,7 @@
     position: relative;
 
     &::before {
-      content: "0"counter(my-counter);
+      content: "0" counter(my-counter);
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-weight: 700;
       font-size: rem(116);
@@ -375,7 +375,7 @@
   max-width: rem(392);
   width: 100%;
   padding: rem(24);
-  border: 1px solid #c4c4c4;
+  border: rem(1) solid #c4c4c4;
   border-radius: rem(6);
   position: relative;
 
@@ -610,7 +610,7 @@
       content: "";
       display: inline-block;
       width: rem(48);
-      height: 1px;
+      height: rem(1);
       background: #fff;
 
       position: absolute;
@@ -666,7 +666,7 @@
       content: "";
       display: block;
       width: rem(48);
-      height: 1px;
+      height: rem(1);
       background: #111;
 
       position: absolute;
@@ -707,7 +707,7 @@
 // ===================== FAQ ===================
 .faq {
   &__item {
-    border-bottom: 1px solid #111;
+    border-bottom: rem(1) solid #111;
     margin-bottom: rem(24);
 
     &:last-child {
@@ -816,7 +816,7 @@
     width: 100%;
     padding: rem(16) 0 rem(8);
     background: transparent;
-    border-bottom: 1px solid rgba(#fff, 0.6);
+    border-bottom: rem(1) solid rgba(#fff, 0.6);
 
     &:focus {
       outline: none;
@@ -997,7 +997,7 @@
     position: relative;
 
     &::before {
-      content: "0"counter(my-counter);
+      content: "0" counter(my-counter);
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-weight: 700;
       font-size: rem(116);

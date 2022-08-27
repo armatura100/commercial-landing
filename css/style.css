@@ -95,18 +95,18 @@ body {
 .btn--accent {
   background: #e85e23;
   color: #fff;
-  border: 1px solid #e85e23;
+  border: 0.0625rem solid #e85e23;
 }
 .btn--accent:hover {
   background: #fff;
   color: #e85e23;
-  border: 1px solid #e85e23;
+  border: 0.0625rem solid #e85e23;
 }
 
 .btn--dark {
   background: #111;
   color: #e85e23;
-  border: 1px solid #e85e23;
+  border: 0.0625rem solid #e85e23;
 }
 .btn--dark:hover {
   background: #e85e23;
@@ -115,7 +115,7 @@ body {
 
 .btn--light {
   background: #fff;
-  border: 1px solid #e85e23;
+  border: 0.0625rem solid #e85e23;
   color: #e85e23;
 }
 .btn--light:hover {
@@ -192,7 +192,7 @@ body {
 .section__title::after {
   content: "";
   width: 3rem;
-  height: 1px;
+  height: 0.0625rem;
   background: #333;
   position: absolute;
   margin-left: 1rem;
@@ -342,7 +342,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 1rem 0 0.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.6);
   transition: border-bottom-color 0.3s;
 }
 .contacts__form-input::placeholder {
@@ -415,7 +415,7 @@ body {
   max-width: 24.5rem;
   width: 100%;
   padding: 1.5rem;
-  border: 1px solid #c4c4c4;
+  border: 0.0625rem solid #c4c4c4;
   border-radius: 0.375rem;
   position: relative;
   transition: box-shadow 0.3s, border-color 0.3s;
@@ -610,7 +610,7 @@ body {
   content: "";
   display: inline-block;
   width: 3rem;
-  height: 1px;
+  height: 0.0625rem;
   background: #fff;
   position: absolute;
   top: 1rem;
@@ -656,7 +656,7 @@ body {
   content: "";
   display: block;
   width: 3rem;
-  height: 1px;
+  height: 0.0625rem;
   background: #111;
   position: absolute;
   top: 1rem;
@@ -685,7 +685,7 @@ body {
 }
 
 .faq__item {
-  border-bottom: 1px solid #111;
+  border-bottom: 0.0625rem solid #111;
   margin-bottom: 1.5rem;
 }
 .faq__item:last-child {
@@ -772,7 +772,7 @@ body {
   width: 100%;
   padding: 1rem 0 0.5rem;
   background: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.6);
 }
 .footer__form-input:focus {
   outline: none;
@@ -1026,11 +1026,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .container {
     padding: 0 1.75rem;
   }
-
   .header {
     background: url("../img/decor-1.png") -26.25rem 7.5rem/40.625rem no-repeat fixed, url("../img/decor-2.png") 40vw -9.5rem/61.125rem auto no-repeat fixed, #111;
   }
@@ -1052,24 +1051,20 @@ body {
   .header__cta-btn + .header__cta-btn {
     margin-left: 2rem;
   }
-
   .section__inner {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 13.5rem auto;
   }
-
   .ideas__items {
     grid-gap: 5.75rem;
   }
   .ideas__item:last-child {
     padding-bottom: 2rem;
   }
-
   .steps .container {
     padding: 0 1.75rem;
   }
-
   .step .section__side {
     padding: 0;
   }
@@ -1079,12 +1074,10 @@ body {
   .step__img {
     border-radius: 0.375rem;
   }
-
   .benefits__items {
     grid-template-columns: repeat(2, minmax(auto, 18.75rem));
     grid-gap: 1.5rem 3.375rem;
   }
-
   .contacts {
     background: url("../img/decor-1.png") -8.125rem 3.5rem/31.25rem no-repeat fixed, url("../img/decor-1.png") 65vw -3.125rem/56.25rem no-repeat fixed, #111;
   }
@@ -1094,11 +1087,9 @@ body {
   .contacts__form-btn {
     max-width: 12.625rem;
   }
-
   .subscribtion__list {
     grid-gap: 3.125rem;
   }
-
   .pricing-item {
     padding: 3rem;
   }
@@ -1111,18 +1102,15 @@ body {
   .pricing-item__btn {
     margin-bottom: 2.5rem;
   }
-
   .portfolio {
     background: url("../img/decor-1.png") -8.125rem 10.75rem/37.5rem no-repeat fixed, url("../img/decor-1.png") 65vw -3.125rem/56.25rem no-repeat fixed, #111;
   }
-
   .reviews .container {
     padding-right: 0;
   }
   .reviews__nav {
     right: 1.75rem;
   }
-
   .footer {
     background: url("../img/decor-1.png") -31.25rem 0/56.25rem no-repeat fixed, url("../img/decor-no-blur.png") 37vw 18.75rem/56.25rem no-repeat fixed, #111;
   }
@@ -1148,7 +1136,6 @@ body {
   .footer__form-btn {
     margin-bottom: 0;
   }
-
   .footer-info {
     background: #111;
   }
@@ -1157,7 +1144,6 @@ body {
     justify-content: center;
     gap: 5rem;
   }
-
   .page-404 {
     background: url("../img/decor-1.png") -21.25rem 40vh/37.5rem no-repeat, url("../img/decor-2.png") 60vw -11.625rem/36.125rem no-repeat;
   }
@@ -1168,18 +1154,15 @@ body {
   .page-404__buttons {
     grid-gap: 2rem;
   }
-
   .product-header__inner {
     min-height: 4.5rem;
   }
-
   .adaptation__iphone {
     max-width: 22.75rem;
   }
   .adaptation__adaptive {
     margin-bottom: 3rem;
   }
-
   .navigation__inner {
     display: flex;
     justify-content: space-between;
@@ -1194,7 +1177,6 @@ body {
   .navigation__btn-next {
     margin-left: 1.5rem;
   }
-
   .info__inner {
     display: flex;
     align-items: flex-start;
@@ -1216,12 +1198,11 @@ body {
     text-align: left;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .container {
     max-width: 81rem;
     margin: 0 auto;
   }
-
   .header {
     background: url("../img/decor-1.png") -26.25rem 13.75rem/56.25rem no-repeat fixed, url("../img/decor-2.png") 45vw 2.25rem/73.75rem auto no-repeat fixed, #111;
     min-height: 50rem;
@@ -1241,7 +1222,6 @@ body {
   .header__top-btn {
     display: flex;
   }
-
   .section {
     margin: 10rem 0;
   }
@@ -1262,7 +1242,6 @@ body {
     line-height: 3.625rem;
     margin-bottom: 2.5rem;
   }
-
   .ideas__content-title {
     margin-bottom: 5rem;
   }
@@ -1276,14 +1255,12 @@ body {
   .ideas__item:last-child {
     padding-bottom: 0;
   }
-
   .step {
     margin-bottom: 4.5rem;
   }
   .step__list {
     margin-bottom: 2.5rem;
   }
-
   .benefits__quote {
     max-width: 16.875rem;
   }
@@ -1298,7 +1275,6 @@ body {
     font-size: 7.25rem;
     line-height: 7.25rem;
   }
-
   .contacts {
     background: url("../img/decor-1.png") -17.5rem 3.5rem/68.75rem no-repeat fixed, url("../img/decor-1.png") 65vw -3.125rem/68.75rem no-repeat fixed, #111;
     padding: 10rem 0;
@@ -1316,7 +1292,6 @@ body {
   .contacts__form-btn {
     margin-bottom: 0;
   }
-
   .subscribtion.section {
     padding-top: 10rem;
   }
@@ -1324,7 +1299,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4.5rem 2rem;
   }
-
   .pricing.section {
     margin: 8.125rem 0;
   }
@@ -1332,7 +1306,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
-
   .portfolio {
     background: url("../img/decor-1.png") -8.125rem 6.25rem/50rem no-repeat fixed, url("../img/decor-1.png") 65vw -3.125rem/56.25rem no-repeat fixed, #111;
     padding: 10rem 0;
@@ -1343,18 +1316,15 @@ body {
   .portfolio__item {
     margin-bottom: 1.875rem;
   }
-
   .reviews .container {
     padding: 0 1.75rem;
   }
   .reviews__nav {
     right: 0;
   }
-
   .faq__content {
     margin-bottom: 2rem;
   }
-
   .footer {
     background: url("../img/decor-1.png") -31.25rem 0/56.25rem no-repeat fixed, url("../img/decor-no-blur.png") 65vw -0.625rem/56.25rem no-repeat fixed, #111;
   }
@@ -1406,7 +1376,6 @@ body {
     text-align: center;
     padding-bottom: 2.5rem;
   }
-
   .footer-info {
     background: #111;
     padding: 0;
@@ -1424,7 +1393,6 @@ body {
   .footer-info .footer__btn {
     display: flex;
   }
-
   .page-404 {
     background: url("../img/decor-1.png") -28.5rem -20rem/56.25rem no-repeat, url("../img/decor-2.png") 62vw 0/73.125rem no-repeat;
   }
@@ -1440,14 +1408,12 @@ body {
     grid-template-columns: repeat(2, 12.625rem);
     justify-content: center;
   }
-
   .product-header__inner {
     min-height: 5rem;
   }
   .product-header__btn {
     display: flex;
   }
-
   .product-tasks__items {
     display: grid;
     grid-gap: 3.75rem 2rem;
@@ -1456,7 +1422,6 @@ body {
   .product-tasks__item {
     margin: 0;
   }
-
   .adaptation__showcase {
     display: flex;
     justify-content: space-between;
@@ -1473,11 +1438,9 @@ body {
     max-width: 14.625rem;
     order: 1;
   }
-
   .navigation {
     margin-bottom: 10rem;
   }
-
   .info__buttons {
     min-width: 24.5rem;
   }
