@@ -1,51 +1,56 @@
 // portfolio slider
-new Swiper(".portfolio__slider", {
-  navigation: {
-    nextEl: ".portfolio__button-next",
-    prevEl: ".portfolio__button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  slidesPerView: 1.1,
-  spaceBetween: 16,
-  speed: 500,
-  breakpoints: {
-    768: {
-      slidesPerView: 1.5,
-      spaceBetween: 24,
+const portfolioSlider = document.querySelector('.portfolio__slider');
+if (portfolioSlider) {
+  new Swiper(portfolioSlider, {
+    navigation: {
+      nextEl: ".portfolio__button-next",
+      prevEl: ".portfolio__button-prev",
     },
-    1280: {
-      slidesPerView: 2.5,
-      spaceBetween: 32,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
     },
-  },
-});
+    slidesPerView: 1.1,
+    spaceBetween: 16,
+    speed: 500,
+    breakpoints: {
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: 24,
+      },
+      1280: {
+        slidesPerView: 2.5,
+        spaceBetween: 32,
+      },
+    },
+  });
+}
 
 // reviews slider
-new Swiper(".reviews__slider", {
-  navigation: {
-    nextEl: ".reviews__btn-next",
-    prevEl: ".reviews__btn-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  speed: 500,
-  breakpoints: {
-    768: {
-      slidesPerView: 1.3,
-      spaceBetween: 32,
+const reviewsSlider = document.querySelector('.reviews__slider');
+if (reviewsSlider) {
+  new Swiper(".reviews__slider", {
+    navigation: {
+      nextEl: ".reviews__btn-next",
+      prevEl: ".reviews__btn-prev",
     },
-    1280: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
     },
-  },
-});
-
+    speed: 500,
+    breakpoints: {
+      768: {
+        slidesPerView: 1.3,
+        spaceBetween: 32,
+      },
+      1280: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+    },
+  });
+}
 
 // faq accordion
 const faqHeaders = document.querySelectorAll(".faq__header");
@@ -79,7 +84,6 @@ if (faqHeaders.length > 0) {
   });
 
 }
-
 
 // info tabs
 const buttons = document.querySelectorAll(".info__btn");
